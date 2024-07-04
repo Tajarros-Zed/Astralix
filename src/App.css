@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* from-cb33b2 */
+/* to-7013e4 */
+/* border-3e4044 */
+/* bg-282b2f */
+/* drop-shadow-0_0_5px_#161620 */
+
+:root {
+  --primary-bg: #212428;
+  --secondary-bg: #282b2f;
+  --bg-border: #3e4044;
+  --heading-colors: #eeeeee;
+  --paragraph-colors: #838386;
+  --subparagraph-colors: #7e60d7;
+  --primary-font: 'Poppins';
+  --secondary-font: 'Lora';
+}
+
+.heading {
+  font-family: var(--primary-font);
+}
+
+.paragraph {
+  font-family: var(--secondary-font);
+}
+
+.parent-container {
+  background-image: url(./assets/banner_galaxy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.animation {
+  animation: glance 5s infinite ease-in-out;
+}
+
+.phone_animation {
+  animation: rotates 5s infinite ease-in-out;
+}
+
+
+.transition_image {
+  transform-origin: 50% 65%;
+  transition: transform 2s, filter 1s ease-in-out;
+}
+
+.transition_image:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.animated_nft {
+  transform-origin: 50% 65%;
+  transition: transform .5s ease-in-out;
+}
+
+.animated_effects:hover .animated_nft {
+  transform: scale(1.025);
+}
+
+.animated_coin {
+  transition: transform .5s ease-in-out;
+}
+
+.animated_effects:hover .animated_coin {
+  background: rgb(203,51,178);
+  background: linear-gradient(90deg, rgba(203,51,178,1) 0%, rgba(112,19,228,1) 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* Key Frames */
+@keyframes glance {
+  0%, to {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes rotates {
+  0%, to {
+    transform: translateY(0) rotate(12deg);
+  }
+
+  50% {
+    transform: translateY(2rem) rotate(12deg);
+  }
+}
