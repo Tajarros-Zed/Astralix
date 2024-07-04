@@ -17,7 +17,7 @@ const Hero = () => {
         <div className='w-full lg:flex-1 flex flex-col items-center justify-center'>
           <div className='text-center xl:text-left flex flex-col gap-4 items-center justify-center xl:items-start xl:justify-start'>
             <h3 className='heading text-[#838386] text-base sm:text-lg xl:text-xl font-semibold py-2'>{getSubHeadings}</h3>
-            <h1 className='heading bg-gradient-to-r from-[#cb33b2] to-[#7013e4] bg-clip-text text-transparent text-4xl sm:text-6xl lg:text-8xl xl:text-[5.3rem] xl:leading-[7rem] 2xl:text-8xl 2xl:leading-[8rem]  text-center xl:text-left uppercase font-black py-4 tracking-wider'>Welcome to Astralix</h1>
+            <h1 className='heading bg-gradient-to-r from-[#cb33b2] to-[#7013e4] bg-clip-text text-transparent text-4xl sm:text-6xl lg:text-8xl xl:text-[5.3rem] xl:leading-[7rem] 2xl:leading-[8rem]  text-center xl:text-left uppercase font-black py-4 tracking-wider'>Welcome to Astralix</h1>
             <p className='paragraph text-[#838386] text-sm sm:text-base xl:text-lg font-normal py-2 leading-10 lg:hidden xl:block'>{getParagraphs}</p>
           </div>
         </div>
